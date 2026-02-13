@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>我的遊戲介紹網頁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎮 我的最愛遊戲</h1>
+
+    <div class="card">
+        <h2>Minecraft</h2>
+        <p>一個自由度超高的沙盒遊戲！</p>
+        <button onclick="showMore()">查看更多</button>
+        <button onclick="likeGame()">❤️ 喜歡 (<span id="likeCount">0</span>)</button>
+        <p id="moreInfo" class="hidden">
+            可以建築、生存、冒險，還能和朋友一起玩！
+        </p>
+    </div>
+
+    <button class="dark-btn" onclick="toggleDarkMode()">🌙 夜間模式</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

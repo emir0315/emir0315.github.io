@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #333;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 夜間模式 */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
