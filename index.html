@@ -2,25 +2,58 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>我的遊戲介紹網頁</title>
+    <title>Emir 的遊戲世界</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>🎮 我的最愛遊戲</h1>
+<h1>🎮 Emir 的遊戲世界</h1>
 
+<button onclick="toggleDarkMode()">🌙 夜間模式</button>
+<button onclick="toggleMusic()">🎵 音樂開關</button>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <!-- Minecraft -->
     <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png">
         <h2>Minecraft</h2>
-        <p>一個自由度超高的沙盒遊戲！</p>
-        <button onclick="showMore()">查看更多</button>
-        <button onclick="likeGame()">❤️ 喜歡 (<span id="likeCount">0</span>)</button>
-        <p id="moreInfo" class="hidden">
-            可以建築、生存、冒險，還能和朋友一起玩！
+        <p>自由沙盒建築遊戲</p>
+        <button onclick="showMore(this)">查看更多</button>
+        <button onclick="likeGame(this)">❤️ 喜歡 (<span>0</span>)</button>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="more hidden">
+            可以建築、生存、探險，和朋友連線超好玩！
         </p>
     </div>
 
-    <button class="dark-btn" onclick="toggleDarkMode()">🌙 夜間模式</button>
+    <!-- Roblox -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_Logo_2022.svg">
+        <h2>Roblox</h2>
+        <p>超多玩家創作的遊戲平台</p>
+        <button onclick="showMore(this)">查看更多</button>
+        <button onclick="likeGame(this)">❤️ 喜歡 (<span>0</span>)</button>
 
-    <script src="script.js"></script>
+        <div class="rating">
+            ⭐⭐⭐⭐☆
+        </div>
+
+        <p class="more hidden">
+            可以自己做遊戲，也可以玩別人做的！
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
