@@ -23,3 +23,13 @@ function toggleMusic() {
         music.pause();
     }
 }
+let score = 0;
+
+function sayHello() {
+  alert("你好！歡迎來到我的升級版網站 😎");
+}
+
+function addScore() {
+  score++;
+  document.getElementById("score").innerText = score;
+}
